@@ -1,0 +1,37 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/5f5797e630cb783e80eb03ca
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Mo",
+    "subscribedChannel" : " Motune's Corner"
+}
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Motune",
+    "subscribedChannel" : " Morenikeji's Corner"
+}
+
+
+
+
+###
+
+DELETE http://localhost:3000/subscribers/5f579ebe1d7df11ac4233b8a
+
+###
+PATCH  http://localhost:3000/subscribers/5f579ebe1d7df11ac4233b8a
+Content-Type: application/json
+
+{
+    "name": "Deroju"
+}
